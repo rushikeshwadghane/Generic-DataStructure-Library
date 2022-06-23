@@ -1,6 +1,6 @@
 #include<iostream>
 
-#include"Linked_List.h"
+#include"DataStructure.h"
 using namespace std;
 
 int main()
