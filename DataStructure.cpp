@@ -148,6 +148,52 @@ int main()
    
 //////////////////////////////////////////////////////
 
+//Stack
+
+  Stack <char>Sobj;
+        int sRet=0;
+        Sobj.InsertStack('A');
+        Sobj.InsertStack('B');
+        Sobj.InsertStack('C');
+        Sobj.InsertStack('D');
+        Sobj.Display();
+        sRet = Sobj.Countnode();
+        printf("No of element in Stack :%d\n",sRet);
+
+
+        Sobj.DeleteStack();
+        Sobj.DeleteStack();
+        Sobj.Display();
+        sRet = Sobj.Countnode();
+        printf("No of element in Stack :%d\n",sRet);        
+
+        Sobj.InsertStack('Z');
+        Sobj.Display();
+        sRet = Sobj.Countnode();
+        printf("No of element in Stack :%d\n",sRet);
+
+
+    //Queue
+         Queue <int>Qobj;
+
+        Qobj.Enqueue(11);
+        Qobj.Enqueue(21);
+        Qobj.Enqueue(51);
+        Qobj.Enqueue(101);
+        Qobj.Display();
+        cout<<"Number of elemenys in queue : "<<Qobj.CountNode()<<endl;
+
+        Qobj.Dequeue();
+        Qobj.Dequeue();
+        Qobj.Dequeue();
+        Qobj.Display();
+        cout<<"Number of elemenys in queue : "<<Qobj.CountNode()<<endl;
+
+        Qobj.Enqueue(111);
+        Qobj.Enqueue(121);
+        Qobj.Display();
+        cout<<"Number of elemenys in queue : "<<Qobj.CountNode()<<endl;    
+
 
     return 0;    
 }
